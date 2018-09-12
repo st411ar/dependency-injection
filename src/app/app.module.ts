@@ -12,17 +12,22 @@ import { UserDemoInjectorComponent } from './user-demo-injector/user-demo-inject
 import { UserDemoModule } from './user-demo/user-demo.module';
 import { UserDemoComponent } from './user-demo/user-demo.component';
 
+import { AnalyticsDemoModule } from './analytics-demo/analytics-demo.module.1';
+import { AnalyticsDemoComponent } from './analytics-demo/analytics-demo.component';
+
 
 export const examples: ExampleModel[] = [ 
 	{ label: 'Intro', path: '' },
 	{ label: 'Injector', path: 'injector' },
 	{ label: 'useClass (UserService)', path: 'use-class' },
+	{ label: 'factory (AnalyticsService)', path: 'factory' }
 ];
 
 const routes: Routes = [
 	{ path: '', component: IntroComponent, pathMatch: 'full' },
 	{ path: 'injector', component: UserDemoInjectorComponent, pathMatch: 'full' },
 	{ path: 'use-class', component: UserDemoComponent, pathMatch: 'full' },
+	{ path: 'factory', component: AnalyticsDemoComponent, pathMatch: 'full' },
 ];
 
 
@@ -39,6 +44,7 @@ const routes: Routes = [
 		RouterModule.forRoot(routes),
 
 		UserDemoModule,
+		AnalyticsDemoModule
 	],
 	providers: [
 		{ provide: 'Examples', useValue: examples }
