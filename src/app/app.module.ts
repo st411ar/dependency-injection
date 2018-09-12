@@ -7,14 +7,17 @@ import { ExampleModel } from './models/example.model';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ItemComponent } from './sidebar/item/item.component';
 import { IntroComponent } from './intro/intro.component';
+import { UserDemoInjectorComponent } from './user-demo-injector/user-demo-injector.component';
 
 
 export const examples: ExampleModel[] = [ 
 	{ label: 'Intro', path: '' },
+	{ label: 'Injector', path: 'injector' },
 ];
 
 const routes: Routes = [
 	{ path: '', component: IntroComponent, pathMatch: 'full' },
+	{ path: 'injector', component: UserDemoInjectorComponent, pathMatch: 'full' },
 ];
 
 
@@ -24,6 +27,7 @@ const routes: Routes = [
 		SidebarComponent,
 		ItemComponent,
 		IntroComponent,
+		UserDemoInjectorComponent,
 	],
 	imports: [
 		BrowserModule,
