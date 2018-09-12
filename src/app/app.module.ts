@@ -12,7 +12,7 @@ import { UserDemoInjectorComponent } from './user-demo-injector/user-demo-inject
 import { UserDemoModule } from './user-demo/user-demo.module';
 import { UserDemoComponent } from './user-demo/user-demo.component';
 
-import { AnalyticsDemoModule } from './analytics-demo/analytics-demo.module.1';
+import { AnalyticsDemoModule } from './analytics-demo/analytics-demo.module';
 import { AnalyticsDemoComponent } from './analytics-demo/analytics-demo.component';
 
 
