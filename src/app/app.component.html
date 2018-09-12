@@ -8,7 +8,7 @@
     </a>
     <div class="header item borderless">
       <h1 class="ui header">
-        Angular Dependency Injection
+        Angular Forms
       </h1>
     </div>
   </div>
@@ -16,10 +16,10 @@
 
 <div class="ui stackable grid container">
   <div class="six wide column">
-    here will be sidebar
+    <app-sidebar [items]="examples"></app-sidebar>
   </div>
 
   <div class="ui main text container ten wide column">
-    here will be routing
+    <router-outlet></router-outlet>
   </div>
 </div>
